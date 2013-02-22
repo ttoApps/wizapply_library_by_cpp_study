@@ -25,7 +25,7 @@
 		49B31F7C16D75E540026AC14 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		49B31F7F16D75E540026AC14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		49B31F8216D75E540026AC14 /* libwizapply_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwizapply_osx.a; sourceTree = "<group>"; };
-		49B31F8416D75E540026AC14 /* WizapplyGameLibrary-Info.plist */ = {isa = PBXFileReference; path = "WizapplyGameLibrary-Info.plist"; sourceTree = "<group>"; };
+		49B31F8416D75E540026AC14 /* WizapplyGameLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WizapplyGameLibrary-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
