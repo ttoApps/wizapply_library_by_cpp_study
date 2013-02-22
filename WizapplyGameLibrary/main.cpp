@@ -7,19 +7,22 @@
 
 // エントリポイント
 #include <EntryPoint.h>		//!<クロスプラットフォーム用共通エントリーポイント
+#include "KeyPadManager.h"
+#include "CInputManager.h"
+#include "CSceneManager.h"
+#include "SceneFactory.h"
+#include "CTransitionManager.h"
+#include "CTextureManager.h"
 
 /* -- マクロ定義 ------------------------------------------------------- */
-
-//アプリのスクリーン表示サイズ
-#define APPSCREEN_WIDTH		(640)
-#define APPSCREEN_HEIGHT	(480)
+#include "Macro.h"
 
 /* -- グローバル変数定義 ----------------------------------------------- */
-
 
 /* -- プロトタイプ宣言 ------------------------------------------------- */
 
 void UpdateFunc(void);	//!<関数
+float GetRand();
 
 /* -- 関数 ------------------------------------------------------------- */
 
@@ -30,12 +33,12 @@ void UpdateFunc(void);	//!<関数
 int Initialize()
 {
 	// Wizapplyライブラリを初期化
-	wzInitCreateWizapply("Wizapply for Mac",APPSCREEN_WIDTH,APPSCREEN_HEIGHT,0);
+	wzInitCreateWizapply("Wizapply for Mac", APPSCREEN_WIDTH, APPSCREEN_HEIGHT, 0);
 
 	/*------------------------------------------------------------------*/
 
 	// 情報をセット
-	wzSetClearColor(0.1f,0.1f,0.1f,1);		// クリア情報
+	wzSetClearColor(0.0f, 0.0f, 0.0f, 1.0f);                // クリア情報
 	wzSetSpriteScSize(APPSCREEN_WIDTH, APPSCREEN_HEIGHT);	// スプライト設定
 	wzSetCursorScSize(APPSCREEN_WIDTH, APPSCREEN_HEIGHT);	// 画面カーソル設定
 
@@ -44,11 +47,14 @@ int Initialize()
 		****ゲームデータを初期化する****
 	
 	----------------------------------------*/
-
+    sSceneManager->SetSceneFactory(new SceneFactory());
+    sSceneManager->PushScene(SceneID_Title);
+    sTextureManager->LoadTexture(0, "textures32.png");
+    
 	/*------------------------------------------------------------------*/
 
 	// 関数をセット
-	wzSetUpdateThread(60,UpdateFunc);	// 更新 -> UpdateFunc
+	wzSetUpdateThread(60, UpdateFunc);	// 更新 -> UpdateFunc
 
 	return 0;
 }
@@ -65,7 +71,7 @@ int Terminate()
 		****ゲームデータを解放する****
 	
 	----------------------------------------*/
-
+    
 	/*------------------------------------------------------------------*/
 
 	// Wizapplyライブラリの終了処理
@@ -91,18 +97,27 @@ void DrawLoop(void)
 		※繰り返し呼び出されます。
 	
 	----------------------------------------*/
+    
+    sSceneManager->Draw();
 
 	/*------------------------------------------------------------------*/
 
 	// デバッグ情報（通常不要）
+    
 	wzSetSpriteColor(1.0f, 1.0f, 1.0f, 1.0f);
 	wzSetSpriteRotate(0.0f);
-	wzFontSize(18);
+    wzFontSize(18);
+    
+	wzPrintf(20,  40, (char *)"Wizapply");
+	wzPrintf(20,  70, (char *)"Update:%0.2f", wzGetUpdateFPS());
+	wzPrintf(20,  90, (char *)"Draw  :%0.2f", wzGetDrawFPS());
+	wzPrintf(20, 120, (char *)"isHold:%u", wzGetTime());
+	wzPrintf(20, 140, (char *)"holdFrame:%d", sKeyPadManager->GetMainKeyPad()->GetHoldFrame(KeyPadA));
+}
 
-	wzPrintf(20, 40, (char *)"Wizapply");
-	wzPrintf(20, 70, (char *)"Update:%.2f", wzGetUpdateFPS());
-	wzPrintf(20, 90, (char *)"Draw  :%.2f", wzGetDrawFPS());
-
+float GetRand()
+{
+    return (float)(rand() % 256) / 256;
 }
 
 /*
@@ -118,7 +133,10 @@ void UpdateFunc(void)
 
 		※繰り返し呼び出されます。
 	
-	----------------------------------------*/
+     ----------------------------------------*/
+    sInputManager->Update();
+    sSceneManager->Update();
+    sTransitionManager->Update();
 }
 
 //EOF

@@ -1,0 +1,10 @@
+#include "Macro.h"
+#include "CLog.h"
+
+#ifdef DEBUG_MODE
+#define CLog(...) CLog::Debug(__FILENAME__, __LINE__, __FUNCTION__, __VA_ARGS__, __VA_ARGS__)
+#else
+#define CLog(...) 
+#endif
+
+#define DLog(...) CLog::Debug(__FILENAME__, __LINE__, __FUNCTION__, __VA_ARGS__, __VA_ARGS__)
