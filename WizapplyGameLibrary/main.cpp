@@ -99,9 +99,9 @@ void DrawLoop(void)
 	wzSetSpriteRotate(0.0f);
 	wzFontSize(18);
 
-	wzPrintf(20, 40, "Wizapply");
-	wzPrintf(20, 70, "Update:%.2f", wzGetUpdateFPS());
-	wzPrintf(20, 90, "Draw  :%.2f", wzGetDrawFPS());
+	wzPrintf(20, 40, (char *)"Wizapply");
+	wzPrintf(20, 70, (char *)"Update:%.2f", wzGetUpdateFPS());
+	wzPrintf(20, 90, (char *)"Draw  :%.2f", wzGetDrawFPS());
 
 }
 
