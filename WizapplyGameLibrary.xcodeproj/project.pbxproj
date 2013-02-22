@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49B31F7516D75E540026AC14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F7416D75E540026AC14 /* Foundation.framework */; };
+		49B31F7716D75E540026AC14 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F7616D75E540026AC14 /* OpenAL.framework */; };
+		49B31F7916D75E540026AC14 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F7816D75E540026AC14 /* AppKit.framework */; };
+		49B31F7B16D75E540026AC14 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F7A16D75E540026AC14 /* OpenGL.framework */; };
+		49B31F7D16D75E540026AC14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F7C16D75E540026AC14 /* Cocoa.framework */; };
+		49B31F8016D75E540026AC14 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B31F7F16D75E540026AC14 /* main.cpp */; };
+		49B31F8316D75E540026AC14 /* libwizapply_osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B31F8216D75E540026AC14 /* libwizapply_osx.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49B31F7016D75E540026AC14 /* WizapplyGameLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WizapplyGameLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49B31F7416D75E540026AC14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49B31F7616D75E540026AC14 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		49B31F7816D75E540026AC14 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		49B31F7A16D75E540026AC14 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		49B31F7C16D75E540026AC14 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		49B31F7F16D75E540026AC14 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		49B31F8216D75E540026AC14 /* libwizapply_osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwizapply_osx.a; sourceTree = "<group>"; };
+		49B31F8416D75E540026AC14 /* WizapplyGameLibrary-Info.plist */ = {isa = PBXFileReference; path = "WizapplyGameLibrary-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49B31F6D16D75E540026AC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B31F7516D75E540026AC14 /* Foundation.framework in Frameworks */,
+				49B31F7716D75E540026AC14 /* OpenAL.framework in Frameworks */,
+				49B31F7916D75E540026AC14 /* AppKit.framework in Frameworks */,
+				49B31F7B16D75E540026AC14 /* OpenGL.framework in Frameworks */,
+				49B31F7D16D75E540026AC14 /* Cocoa.framework in Frameworks */,
+				49B31F8316D75E540026AC14 /* libwizapply_osx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49B31F6516D75E540026AC14 = {
+			isa = PBXGroup;
+			children = (
+				49B31F7E16D75E540026AC14 /* WizapplyGameLibrary */,
+				49B31F7316D75E540026AC14 /* Frameworks */,
+				49B31F7116D75E540026AC14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49B31F7116D75E540026AC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49B31F7016D75E540026AC14 /* WizapplyGameLibrary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49B31F7316D75E540026AC14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49B31F7416D75E540026AC14 /* Foundation.framework */,
+				49B31F7616D75E540026AC14 /* OpenAL.framework */,
+				49B31F7816D75E540026AC14 /* AppKit.framework */,
+				49B31F7A16D75E540026AC14 /* OpenGL.framework */,
+				49B31F7C16D75E540026AC14 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49B31F7E16D75E540026AC14 /* WizapplyGameLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				49B31F7F16D75E540026AC14 /* main.cpp */,
+				49B31F8416D75E540026AC14 /* WizapplyGameLibrary-Info.plist */,
+				49B31F8116D75E540026AC14 /* Wizapply */,
+			);
+			path = WizapplyGameLibrary;
+			sourceTree = "<group>";
+		};
+		49B31F8116D75E540026AC14 /* Wizapply */ = {
+			isa = PBXGroup;
+			children = (
+				49B31F8216D75E540026AC14 /* libwizapply_osx.a */,
+			);
+			name = Wizapply;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49B31F6F16D75E540026AC14 /* WizapplyGameLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49B31F8716D75E540026AC14 /* Build configuration list for PBXNativeTarget "WizapplyGameLibrary" */;
+			buildPhases = (
+				49B31F6C16D75E540026AC14 /* Sources */,
+				49B31F6D16D75E540026AC14 /* Frameworks */,
+				49B31F6E16D75E540026AC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WizapplyGameLibrary;
+			productName = WizapplyGameLibrary;
+			productReference = 49B31F7016D75E540026AC14 /* WizapplyGameLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49B31F6716D75E540026AC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 49B31F6A16D75E540026AC14 /* Build configuration list for PBXProject "WizapplyGameLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49B31F6516D75E540026AC14;
+			productRefGroup = 49B31F7116D75E540026AC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49B31F6F16D75E540026AC14 /* WizapplyGameLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49B31F6E16D75E540026AC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49B31F6C16D75E540026AC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B31F8016D75E540026AC14 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49B31F8516D75E540026AC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					MACOSX,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Library/Wizapply/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = ./obj;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SYMROOT = ./bin;
+			};
+			name = Debug;
+		};
+		49B31F8616D75E540026AC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "~/Library/Wizapply/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OBJROOT = ./obj;
+				SDKROOT = macosx;
+				SYMROOT = ./bin;
+			};
+			name = Release;
+		};
+		49B31F8816D75E540026AC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					MACOSX,
+				);
+				HEADER_SEARCH_PATHS = "~/Library/Wizapply/include";
+				INFOPLIST_FILE = "WizapplyGameLibrary/WizapplyGameLibrary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WizapplyGameLibrary\"",
+				);
+				OBJROOT = ./obj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ./bin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49B31F8916D75E540026AC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = MACOSX;
+				HEADER_SEARCH_PATHS = "~/Library/Wizapply/include";
+				INFOPLIST_FILE = "WizapplyGameLibrary/WizapplyGameLibrary-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WizapplyGameLibrary\"",
+				);
+				OBJROOT = ./obj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = ./bin;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49B31F6A16D75E540026AC14 /* Build configuration list for PBXProject "WizapplyGameLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B31F8516D75E540026AC14 /* Debug */,
+				49B31F8616D75E540026AC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B31F8716D75E540026AC14 /* Build configuration list for PBXNativeTarget "WizapplyGameLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49B31F8816D75E540026AC14 /* Debug */,
+				49B31F8916D75E540026AC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49B31F6716D75E540026AC14 /* Project object */;
+}
